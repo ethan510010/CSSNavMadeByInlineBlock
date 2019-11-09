@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-nav {
+    background-color: orange;
+    text-align: center;
+    margin:0;
+    /* 如果要消除inline-block之間的間距就要加下面這一行，因為間距是li跟li之間的換行空格產生的，所以我們直接把li的父層ul的font-size歸零，
+    但如果加了，就必須把li的font-size設回來(要不然li裡面的font-size也都變成0，裡面的子元素的字就都會不見) */
+    /* font-size: 0; */
+}
+
+.main-nav li {
+    display: inline-block;
+    /* 配合消除inline-block之間的間距用的 */
+    /* font-size: 1rem; */
+}
+
+.main-nav a {
+    padding: 10px;
+    display: block;
+    color:white;
+    text-decoration: none;
+    background-color: red;
+}
+
+.main-nav a:hover {
+    background-color: blue;
+}
